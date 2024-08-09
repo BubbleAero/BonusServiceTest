@@ -36,13 +36,13 @@ public class BonusServiceTest {
     }
 
     @Test
-    void shouldCalculateForUnRegisteredAndUnderLimit() {
+    void shouldCalculateForUnRegisteredAndUnderLimit(){
         BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 1000;
         boolean registered = false;
-        long expected = 10;git status
+        long expected = 10;
 
 
         // вызываем целевой метод:
@@ -50,7 +50,6 @@ public class BonusServiceTest {
 
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
-    }
 
     @Test
     void shouldCalculateForUnRegisteredAndOverLimit() {
